@@ -26,13 +26,12 @@ You know how hard it is sometimes to manage large groups so here is the solution
 
 I'm group manager bot and my special feature is that i can handle unlimited filters. For more feature press /help .
 
-My owner is [Dayam Zaidi](t.me/mrdayamzaidi)
+My owner is [Jishnu](t.me/USER_IS_HACKER).
 
-Special thanks to [Jayesh Patil](t.me/Jayesh_Patil).
 
 Click /help or Help button below to find out more about how to use me to my full potential.
 
- Add me to a group by clicking [here](http://t.me/NobaleBot?startgroup=true).
+ Add me to a group by clicking [here](http://t.me/QueenElsa_robot?startgroup=true).
 """
 
 
@@ -150,8 +149,8 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START
 
-    keyboard = [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_")]]
-    keyboard += [[InlineKeyboardButton(text="🛠 Support Group", url="https://t.me/NobaleSupportGroup"), 
+    keyboard = [[InlineKeyboardButton(text="🇮🇳 My owner", url="https://t.me/USER_IS_HACKER")]]
+    keyboard += [[InlineKeyboardButton(text="➕ Add me to a group ➕ ", url="https://t.me/QueenElsa_robot?startgroup=true"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
 
     update.effective_message.reply_text(PM_START.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
